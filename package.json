@@ -1,0 +1,22 @@
+{
+  "name": "tsseed",
+  "version": "1.0.0",
+  "description": "Type script seed that includes express, mocha",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --display-error-details"
+  },
+  "author": "Walter Torricos",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.0.34",
+    "@types/node": "^6.0.54",
+    "awesome-typescript-loader": "^3.0.0-beta.17",
+    "typescript": "^2.1.4",
+    "webpack": "^1.14.0"
+  }
+}
