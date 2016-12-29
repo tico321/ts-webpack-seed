@@ -14,7 +14,7 @@ export class Test {
 
   private configureGet() {
     this.router.get('/', (_, response : express.Response) => {
-      response.json('test response');
+      response.json(['test response']);
     });
   }
 }
