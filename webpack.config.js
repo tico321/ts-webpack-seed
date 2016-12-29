@@ -13,6 +13,13 @@ module.exports = {
     extensions: ['.ts', '.tsx', '.js', '.jsx', '']
   },
   module: {
+    preLoaders: [
+      {
+        test: /\.ts$/,
+        exclude: /node_modules/,
+        loader: 'tslint-loader'
+      }
+    ],
     loaders: [
       {
         test: /\.ts$/,
@@ -22,5 +29,7 @@ module.exports = {
     ]
   },
   // in order to ignore all modules in node_modules folder
-  externals: [nodeExternals()]
+  externals: [nodeExternals()],
+  //check rule flags at https://palantir.github.io/tslint/usage/rule-flags/
+  tslint: { configFile: './tslint-custom.json' }
 };

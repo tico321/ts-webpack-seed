@@ -32,6 +32,8 @@
     "mocha-webpack": "^0.7.0",
     "nodemon": "^1.11.0",
     "supertest": "^2.0.1",
+    "tslint": "^4.2.0",
+    "tslint-loader": "^3.3.0",
     "typescript": "^2.1.4",
     "webpack": "^1.14.0",
     "webpack-node-externals": "^1.5.4"

@@ -1,6 +1,6 @@
 import 'mocha';
 import * as supertest from 'supertest';
-import { Server } from '../app';
+import { Server } from '../server';
 const app = new Server().app;
 
 describe('/test', () => {
